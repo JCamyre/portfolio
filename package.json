@@ -1,0 +1,37 @@
+{
+  "name": "js-camyre",
+  "version": "1.0.0",
+  "description": "Joseph Camyre's Portfolio Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev -H 0.0.0.0",
+    "build": "next build",
+    "prettier": "pretter -write",
+    "lint": "next lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCamyre/NewPortfolioSite.git"
+  },
+  "keywords": [],
+  "author": "Joseph Camyre",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JCamyre/NewPortfolioSite/issues"
+  },
+  "homepage": "https://github.com/JCamyre/NewPortfolioSite#readme",
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.10",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-next": "^11.1.2",
+    "prettier": "^2.4.1"
+  }
+}
