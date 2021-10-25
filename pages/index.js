@@ -13,7 +13,7 @@ const Page = () => {
                 <Heading as='h2' variant='page-title'>
                     Joseph Camyre
                 </Heading>
-                <p>Digital Craftsman ( Artist / Developer / Designer )</p>
+                <p>Software Engineer ( Developer / Designer / Dreamer )</p>
             </Box>
         </Container>
     )
