@@ -15,7 +15,7 @@ import {
     IconButton,
     useColorModeValue
 } from '@chakra-ui/react';
-import { HumburgerIcon } from '@chakra-ui/icons';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 const LinkItem = ({ href, path, children }) => {
     // This is for if the current path of the user is equal to the href of the LinkItem, if so then we are on this page. Then we highlight it.
@@ -33,6 +33,7 @@ const LinkItem = ({ href, path, children }) => {
     )
 }
 
+// Not perfectly aligned
 const Navbar = props => {
     const { path } = props;
 
@@ -40,7 +41,45 @@ const Navbar = props => {
     return (
         <Box position='fixed' as='nav' w='100%' bg={useColorModeValue('#ffffff40', '#202023080')} style={{backdropFilter: 'blur(10px)'}}
             zIndex={1} {...props}>
-            Navbar
+            <Container display='flex' maxW='container.md' wrap='wrap' align='center' justify='space-between'>
+                <Flex align='center' mr={5}>
+                    <Heading as='h1' size='lg' letterSpacing={'tighter'}>
+                        <Logo />
+                    </Heading>
+                </Flex>
+                {/* how do these base and md keys work, based on size of window? */}
+                <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} 
+                    alignItems='center' flexGrow={1} mt={{base: 4, nmd: 0}}>
+                    {/* href is for the url, path is the internal path to the react page, why do they have the same path variable */}
+                    <LinkItem href='/works' path={path}>
+                        Works
+                    </LinkItem>
+                    <LinkItem href='/posts' path={path}>
+                        Posts
+                    </LinkItem>
+                </Stack>
+            <Box flex={1} align='right'>
+                <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
+                    <Menu>
+                        <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label='Options' />
+                        <MenuList>
+                            <NextLink href='/' passHref>
+                                <MenuItem as={Link}>About</MenuItem>
+                            </NextLink>
+                            <NextLink href='/works' passHref>
+                                <MenuItem as={Link}>Works</MenuItem>
+                            </NextLink>
+                            <NextLink href='/posts' passHref>
+                                <MenuItem as={Link}>Posts</MenuItem>
+                            </NextLink>
+                            <MenuItem as={Link} href='https://www.craftz.dog/'>
+                                View Source
+                            </MenuItem>
+                        </MenuList>
+                    </Menu>
+                </Box>
+            </Box>
+            </Container>
         </Box>
     )
 }
