@@ -1,5 +1,8 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react';
+import { Container, Box, Heading, Image, Link, Button, useColorModeValue } from '@chakra-ui/react';
+import NextLink from 'next/link';
+import { ChevronRightIcon } from '@chakra-ui/icons';
 import Section from '../components/section';
+import Paragraph from '../components/paragraph';
 
 const Page = () => {
     return (
@@ -25,7 +28,23 @@ const Page = () => {
                 <Heading as='h3' variant='section-title'>
                     Work
                 </Heading>
-                <p>Paragraph</p>
+                {/* When you make a styled tag, you can use it like a component, with all the css styling */}
+                <Paragraph>Joseph is currently working on {' '}
+                    <NextLink href='/works/lunatrading'>
+                        <Link>Lunatrading</Link>
+                    </NextLink>
+                    <br />
+                    He is the Web Developer/Webmaster for the CHIPS Lab at UCLA.<br />
+                    He is also a part of a start-up with DevX called Bolt, a scheduling app that plans to improve human interaction by decreasing the effort required to schedule get-togethers.<br />
+                    He is also an intern for ACM DevTeam.
+                </Paragraph>
+                <Box align='center' my={4}>
+                    <NextLink href='/works'>
+                        <Button rightIcon={<ChevronRightIcon />} colorScheme='teal'>
+                            My portfolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
         </Container>
     )
