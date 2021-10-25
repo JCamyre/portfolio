@@ -16,6 +16,7 @@ import {
     useColorModeValue
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
 
 const LinkItem = ({ href, path, children }) => {
     // This is for if the current path of the user is equal to the href of the LinkItem, if so then we are on this page. Then we highlight it.
@@ -51,6 +52,9 @@ const Navbar = props => {
                 <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} 
                     alignItems='center' flexGrow={1} mt={{base: 4, nmd: 0}}>
                     {/* href is for the url, path is the internal path to the react page, why do they have the same path variable */}
+                    <LinkItem href='/about' path={path}>
+                        About 
+                    </LinkItem>
                     <LinkItem href='/works' path={path}>
                         Works
                     </LinkItem>
@@ -59,6 +63,7 @@ const Navbar = props => {
                     </LinkItem>
                 </Stack>
             <Box flex={1} align='right'>
+                <ThemeToggleButton />
                 <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
                     <Menu>
                         <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label='Options' />
