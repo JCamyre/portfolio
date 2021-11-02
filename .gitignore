@@ -1,2 +1,6 @@
 node_modules
 notes.txt
+.next
+dist
+.vercel
+.env
