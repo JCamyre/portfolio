@@ -8,6 +8,7 @@
                 "argsIgnorePattern": "^_",
                 "varsIgnorePattern": "^_"
             }
-        ]
+        ],
+        "@next/next/no-document-import-in-page": 0
     }
 }
