@@ -1,0 +1,50 @@
+Next.js structure:
+Has components like React
+Has pages like React, but interesting structure with _app.js, _document.js. 
+The index.js and works.js makes sense, normal home page and works page
+Maybe _app.js handles routing, _document.js styling and formatting
+
+Invalid option specification (Namespace: 'aws:elasticbeanstalk:container:nodejs:staticfiles', OptionName: '/public/'): Unknown configuration setting.
+
+Code:
+option_settings:
+  aws:elasticbeanstalk:container:nodejs:staticfiles:
+    /public/: /public/
+
+Notes from Next.js (Framework) video:
+SEO optimized
+Normal React apps are client side rendering (CSR): meaning webpage starts with a shell of an HTML page, static webpage, lacking any rendered content, then the browser fetches javascript file that contains React code, which then renders content to the page and makes it interactive
+Two major drawbacks to CSR:
+1. Content not reliably indexed by all search engines or read by social media link bots (SEO not consistent, may be preferred a lot more by Google than Twitter and Facebook)
+2. Poor performance (lose users and bad for SEO I think), slow "First Contentful Paint" (marks the time at which the first text or image is printed)
+
+Next:
+Server side rendering, so when the user/robot clicks on the webpage, they immediately see everything rendered HTML
+After receiving the initial page, it goes back to client side rendering (when you interact with the buttons and other components), like a regular React app
+
+Pages folder, React component that represents a route in the application, mirrors urls user will actually navigate to. 
+Sorta like my regular React projects where I have a pages folder for each route
+
+Next has its own router
+
+index.js = '/';
+
+Data fetching op with Next
+"Next can perform multiple server rendering strategies from a single project" - bro
+
+Server rendering strategies:
+Static generation - render all pages at build time. 
+Each page can implement a function called "getStaticProps", which may fetch data from a cloud storage or api. Then it can pass this data as a props to the main component (export default function), then you render the HTML locally (server?) and upload it to a storage bucket, and can be cached by a CDN. Good for Blogs or anything where content doesn't change that often, good for performance. 
+
+But if the data does change often:
+Server-side rendering: 
+generate each page at request time
+Each page can implement a function called "getServerSideProps", fetches the latest data each time a new request comes in
+Good for social media since new posts constantly, and the amount of comments and likes changing frequently
+
+If you want a middle-ground:
+Incremental Static Regeneration: 
+Re-generate single pages in the background. 
+Still use "getStaticProps", but add a "revalidate" option when returning the fetched data, so it will rebuild at most every 30 seconds
+Confusing: "Next can regenerate a page when a new request comes in within an interval". So why would you want to regenerate a page only if it was within a certain amount of time
+w
