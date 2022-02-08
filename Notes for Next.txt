@@ -48,3 +48,4 @@ Re-generate single pages in the background.
 Still use "getStaticProps", but add a "revalidate" option when returning the fetched data, so it will rebuild at most every 30 seconds
 Confusing: "Next can regenerate a page when a new request comes in within an interval". So why would you want to regenerate a page only if it was within a certain amount of time
 w
+f
