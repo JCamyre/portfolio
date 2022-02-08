@@ -25,15 +25,14 @@ const Page = () => {
           mb={6}
           align="center"
         >
-          Hello, I&apos;m a full-stack developer at UCLA studing Computer
-          Science
+          Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer Science!
         </Box>
         <Box display={{ md: 'flex' }}></Box>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Joseph Camyre
           </Heading>
-          <p>Software Engineer ( Developer / Designer / Dreamer )</p>
+          <p>Software Engineer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -45,7 +44,7 @@ const Page = () => {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="100px"
+            maxWidth="200px"
             display="inline-block"
             borderRadius="full"
             src="/images/joseph.jpg"
@@ -62,13 +61,17 @@ const Page = () => {
             <NextLink href="/works/lunatrading">
               <Link>Lunatrading</Link>
             </NextLink>
-            He is the Web Developer/Webmaster for the CHIPS Lab at UCLA.
+            .
             <br />
-            He is also a part of a start-up with DevX called Bolt, a scheduling
-            app that plans to improve human interaction by decreasing the effort
-            required to schedule get-togethers.
-            <br />
-            He is also an intern for ACM DevTeam.
+            <Paragraph>
+              He is the Full-Stack Developer and Webmaster for the CHIPS (Center
+              for Heterogeneous Integration and Performance Scaling) Lab at
+              UCLA. He is also a part of a start-up with UCLA DevX called Data
+              Den, a data analytics and congretation using surveys and
+              targetting the college student demographic.
+              <br />
+              He is also searching for an internship for the 2022 Summer.
+            </Paragraph>
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
@@ -76,11 +79,14 @@ const Page = () => {
                 My portfolio
               </Button>
             </NextLink>
-            <NextLink href="https://github.com/JCamyre">
+          </Box>
+          <Box align="center" my={1}>
+            {/* Some issue with this rn: target="_blank" ref="noreferrer" */}
+            <a href="https://github.com/JCamyre">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Github Profile
               </Button>
-            </NextLink>
+            </a>
           </Box>
         </Section>
         <Section delay={0.2}>
@@ -94,6 +100,10 @@ const Page = () => {
           <BioSection>
             <BioYear>2021</BioYear>
             Started studying CS at UCLA.
+            <br />
+            Started working at CHIPS Lab (UCLA)
+            <br />
+            Started working at UCLA DevX
           </BioSection>
         </Section>
         <Section delay={0.3}>

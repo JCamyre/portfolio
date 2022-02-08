@@ -1,92 +1,120 @@
-import Logo from './logo';
-import NextLink from 'next/link';
+import Logo from './logo'
+import NextLink from 'next/link'
 
 import {
-    Container,
-    Box,
-    Link,
-    Stack,
-    Heading,
-    Flex,
-    Menu,
-    MenuItem,
-    MenuList,
-    MenuButton,
-    IconButton,
-    useColorModeValue
-} from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
-import ThemeToggleButton from './theme-toggle-button';
+  Container,
+  Box,
+  Link,
+  Stack,
+  Heading,
+  Flex,
+  Menu,
+  MenuItem,
+  MenuList,
+  MenuButton,
+  IconButton,
+  useColorModeValue
+} from '@chakra-ui/react'
+import { HamburgerIcon } from '@chakra-ui/icons'
+import ThemeToggleButton from './theme-toggle-button'
 
 const LinkItem = ({ href, path, children }) => {
-    // This is for if the current path of the user is equal to the href of the LinkItem, if so then we are on this page. Then we highlight it.
-    // This is what I was trying to do for my navbuttons (current page), couldn't figure it out
-    const active = path === href; // if user is on this page, then their path === this item's href
+  // This is for if the current path of the user is equal to the href of the LinkItem, if so then we are on this page. Then we highlight it.
+  // This is what I was trying to do for my navbuttons (current page), couldn't figure it out
+  const active = path === href // if user is on this page, then their path === this item's href
 
-    const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900');
-    // Link is UI, NextLink is handling logic
-    return (
-        <NextLink href={href}>
-            <Link pg={2} bg={active ? 'glassTeal' : undefined} color={active ? '@  #202030' : inactiveColor}>
-                {children}
-            </Link> 
-        </NextLink>
-    )
+  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+  // Link is UI, NextLink is handling logic
+  return (
+    <NextLink href={href}>
+      <Link
+        pg={2}
+        bg={active ? 'glassTeal' : undefined}
+        color={active ? '@  #202030' : inactiveColor}
+      >
+        {children}
+      </Link>
+    </NextLink>
+  )
 }
 
 // Not perfectly aligned
 const Navbar = props => {
-    const { path } = props;
+  const { path } = props
 
-    // So you can do <p {...props}></p> and it will load in all props passed in. Wow, so convenient
-    return (
-        <Box position='fixed' as='nav' w='100%' bg={useColorModeValue('#ffffff40', '#202023080')} style={{backdropFilter: 'blur(10px)'}}
-            zIndex={1} {...props}>
-            <Container display='flex' maxW='container.md' wrap='wrap' align='center' justify='space-between'>
-                <Flex align='center' mr={5}>
-                    <Heading as='h1' size='lg' letterSpacing={'tighter'}>
-                        <Logo />
-                    </Heading>
-                </Flex>
-                {/* how do these base and md keys work, based on size of window? */}
-                <Stack direction={{base: 'column', md: 'row'}} display={{base: 'none', md: 'flex'}} width={{base: 'full', md: 'auto'}} 
-                    alignItems='center' flexGrow={1} mt={{base: 4, nmd: 0}}>
-                    {/* href is for the url, path is the internal path to the react page, why do they have the same path variable */}
-                    <LinkItem href='/about' path={path}>
-                        About 
-                    </LinkItem>
-                    <LinkItem href='/works' path={path}>
-                        Works
-                    </LinkItem>
-                    <LinkItem href='/posts' path={path}>
-                        Posts
-                    </LinkItem>
-                </Stack>
-            <Box flex={1} align='right'>
-                <ThemeToggleButton />
-                <Box ml={2} display={{base: 'inline-block', md: 'none'}}>
-                    <Menu>
-                        <MenuButton as={IconButton} icon={<HamburgerIcon />} variant='outline' aria-label='Options' />
-                        <MenuList>
-                            <NextLink href='/' passHref>
-                                <MenuItem as={Link}>About</MenuItem>
-                            </NextLink>
-                            <NextLink href='/works' passHref>
-                                <MenuItem as={Link}>Works</MenuItem>
-                            </NextLink>
-                            <NextLink href='/posts' passHref>
-                                <MenuItem as={Link}>Posts</MenuItem>
-                            </NextLink>
-                            <MenuItem as={Link} href='https://www.craftz.dog/'>
-                                View Source
-                            </MenuItem>
-                        </MenuList>
-                    </Menu>
-                </Box>
-            </Box>
-            </Container>
+  // So you can do <p {...props}></p> and it will load in all props passed in. Wow, so convenient
+  return (
+    <Box
+      position="fixed"
+      as="nav"
+      w="100%"
+      bg={useColorModeValue('#ffffff40', '#202023080')}
+      style={{ backdropFilter: 'blur(10px)' }}
+      zIndex={1}
+      {...props}
+    >
+      <Container
+        display="flex"
+        maxW="container.md"
+        wrap="wrap"
+        align="center"
+        justify="space-between"
+      >
+        <Flex align="center" mr={5}>
+          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+            <Logo />
+          </Heading>
+        </Flex>
+        {/* how do these base and md keys work, based on size of window? */}
+        <Stack
+          direction={{ base: 'column', md: 'row' }}
+          display={{ base: 'none', md: 'flex' }}
+          width={{ base: 'full', md: 'auto' }}
+          alignItems="center"
+          flexGrow={1}
+          mt={{ base: 4, nmd: 0 }}
+        >
+          {/* href is for the url, path is the internal path to the react page, why do they have the same path variable */}
+          <LinkItem href="/about" path={path}>
+            About
+          </LinkItem>
+          <LinkItem href="/works" path={path}>
+            Works
+          </LinkItem>
+          <LinkItem href="/posts" path={path}>
+            Posts
+          </LinkItem>
+        </Stack>
+        <Box flex={1} align="right">
+          <ThemeToggleButton />
+          <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
+            <Menu>
+              <MenuButton
+                as={IconButton}
+                icon={<HamburgerIcon />}
+                variant="outline"
+                aria-label="Options"
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem as={Link}>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem as={Link}>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem as={Link}>Posts</MenuItem>
+                </NextLink>
+                <MenuItem as={Link} href="https://www.craftz.dog/">
+                  View Source
+                </MenuItem>
+              </MenuList>
+            </Menu>
+          </Box>
         </Box>
-    )
+      </Container>
+    </Box>
+  )
 }
 
-export default Navbar;
+export default Navbar
