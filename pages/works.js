@@ -4,8 +4,8 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
-import thumbLunatrading from '../public/images/joseph.jpg'
-import thumbBolt from '../public/images/dog.png'
+import thumbLunatrading from '../public/images/lunatradinglogo.png'
+import thumbDataDen from '../public/images/dataden.png'
 
 const Works = () => {
   return (
@@ -20,13 +20,19 @@ const Works = () => {
               id="lunatrading"
               title="Lunatrading"
               thumbnail={thumbLunatrading}
+              width={30}
             >
-              An all-in-one trading information app
+              An all-in-one trading info app
             </WorkGridItem>
           </Section>
           <Section>
-            <WorkGridItem id="bolt" title="Bolt" thumbnail={thumbBolt}>
-              Scheduling app to schedule schedules
+            <WorkGridItem
+              id="dataden"
+              title="Data Den"
+              thumbnail={thumbDataDen}
+            >
+              Data aggregation and analytics using surveys, targetting college
+              demographics
             </WorkGridItem>
           </Section>
         </SimpleGrid>
