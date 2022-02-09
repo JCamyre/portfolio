@@ -1,7 +1,8 @@
-import { Box, Container, Image, SimpleGrid } from '@chakra-ui/react'
+import { Box, Container, Heading, Image, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Paragraph from '../components/paragraph'
 import Section from '../components/section'
+import { React } from 'react'
 
 export default function About() {
   return (
@@ -32,6 +33,59 @@ export default function About() {
               want to reach out to me for any reason, the best way to contact me
               is via email: jcamyre127@g.ucla.edu.
             </Paragraph>
+          </Section>
+          <Section>
+            <SimpleGrid columns={3} spacing={20}>
+              <Box>
+                <Heading fontSize={18}>Languages</Heading>
+                <Paragraph align="center">
+                  Python
+                  <br />
+                  JavaScript
+                  <br />
+                  C++
+                  <br />
+                  TypeScript
+                  <br />
+                  HTML
+                  <br />
+                  SQL
+                  <br />
+                  Ruby
+                  <br />
+                  Swift
+                  <br />
+                </Paragraph>
+              </Box>
+              <Box>
+                <Heading fontSize={18}>Frameworks</Heading>
+                <Paragraph>
+                  React
+                  <br />
+                  React Native
+                  <br />
+                  Next.js
+                  <br />
+                  Gatsby.js
+                  <br />
+                  Express
+                  <br />
+                  Node.js
+                  <br />
+                </Paragraph>
+              </Box>
+              <Box>
+                <Heading fontSize={18}>Other</Heading>
+                <Paragraph>
+                  AWS
+                  <br />
+                  PostgreSQL
+                  <br />
+                  MongoDB
+                  <br />
+                </Paragraph>
+              </Box>
+            </SimpleGrid>
           </Section>
         </SimpleGrid>
       </Container>
