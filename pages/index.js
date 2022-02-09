@@ -64,11 +64,13 @@ const Page = () => {
             .
             <br />
             <Paragraph>
-              He is the Full-Stack Developer and Webmaster for the CHIPS (Center
-              for Heterogeneous Integration and Performance Scaling) Lab at
-              UCLA. He is also a part of a start-up with UCLA DevX called Data
-              Den, a data analytics and congretation using surveys and
-              targetting the college student demographic.
+              He is the Full-Stack Developer and Webmaster for the{' '}
+              {/* target="_blank" ref="noreferrer" */}
+              <a href="https://chips.ucla.edu">CHIPS</a> (Center for
+              Heterogeneous Integration and Performance Scaling) Lab at UCLA. He
+              is also a part of a start-up with UCLA DevX called Data Den, a
+              data analytics and congretation using surveys and targetting the
+              college student demographic.
               <br />
               He is also searching for an internship for the 2022 Summer.
             </Paragraph>
