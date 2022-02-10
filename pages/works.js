@@ -11,7 +11,7 @@ const Works = () => {
   return (
     <Layout>
       <Container>
-        <Heading as="h3" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={32} mb={4}>
           Works
         </Heading>
         <SimpleGrid column={[1, 1, 2]} gap={6}>
