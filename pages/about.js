@@ -8,6 +8,9 @@ export default function About() {
   return (
     <Layout>
       <Container>
+        <Heading as="h3" fontSize={32} mb={4}>
+          About
+        </Heading>
         <SimpleGrid>
           <Section>
             <Box align="center">
