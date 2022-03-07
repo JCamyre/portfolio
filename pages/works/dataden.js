@@ -1,12 +1,7 @@
-import {
-  Container,
-  Layout,
-  // Box,
-  // SimpleGrid,
-  // Center,
-  Section,
-  Paragraph
-} from '@chakra-ui/react'
+// Box,
+// SimpleGrid,
+// Center,
+import { Container, Layout, Section, Paragraph } from '@chakra-ui/react'
 
 const Work = () => {
   return (
