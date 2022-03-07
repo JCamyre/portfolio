@@ -1,9 +1,9 @@
 import {
   Container,
   Layout,
-  Box,
-  SimpleGrid,
-  Center,
+  // Box,
+  // SimpleGrid,
+  // Center,
   Section,
   Paragraph
 } from '@chakra-ui/react'
