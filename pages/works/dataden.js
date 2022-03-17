@@ -1,18 +1,25 @@
 // Box,
 // SimpleGrid,
 // Center,
-import { Container, Layout, Section, Paragraph } from '@chakra-ui/react'
+// import {
+//   Container,
+//   Layout,
+//   Section,
+//   Paragraph,
+//   SimpleGrid
+// } from '@chakra-ui/react'
 
-const Work = () => {
+export default function work() {
   return (
-    <Layout title="dataden">
-      <Container>
-        <Section>
-          <Paragraph>yo</Paragraph>
-        </Section>
-      </Container>
-    </Layout>
+    <div>yo</div>
+    // <Layout title="dataden">
+    //   <Container>
+    //     <SimpleGrid column={[1, 1, 2]} gap={6}>
+    //       <Section>
+    //         <Paragraph>yo</Paragraph>
+    //       </Section>
+    //     </SimpleGrid>
+    //   </Container>
+    // </Layout>
   )
 }
-
-export default Work
