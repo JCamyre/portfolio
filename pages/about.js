@@ -23,18 +23,26 @@ export default function About() {
           </Section>
           <Section>
             <Paragraph>
-              I am a first year CS major at UCLA and a Full-Stack developer who
-              wants to pursue new projects and try out iOS development. I am
-              currently working at the CHIPS lab at UCLA maintaining, upgrading,
-              and building new websites for them. I am also with a group of
-              brilliant students at UCLA DevX working on a data aggregation and
-              analytics app. I will be a Software Engineer after graduation,
-              either specializing in Full-Stack or Mobile development, or
-              something else who knows! Interested in both MANGA and start-up
-              companies. I enjoy to workout, play tennis, cars, playing the
-              guitar, trading, and eating spicy food in my free time! If you
-              want to reach out to me for any reason, the best way to contact me
-              is via email: jcamyre127@g.ucla.edu.
+              I am a CS major at UCLA and a Full-Stack developer focusing on web
+              development and mobile development. I'm a Frontend Web Dev Intern
+              for Viasat, where I will be building their component library for
+              all of their websites and apps, where I will reach 100,000's of
+              Viasat customers. I am currently working at the CHIPS lab at UCLA
+              maintaining, upgrading, and building new websites for them. I am
+              also the Lead Frontend Developer and Project Manager for Yumie, a
+              data aggregation and social media app targeted at college
+              students. I assign tasks, help those who are running into issues,
+              and do my best to make sure we reach our deadlines. We currently
+              have a team of about 5 frontend engineers and about 20 people
+              total. I am also a Dev Team Officer for ACM at UCLA, where I help
+              coordinate events, assign tasks to other engineers, and help
+              resolve issues within the team. I will be a Software Engineer
+              after graduation, most likely specializing in Full-Stack or Mobile
+              development. Interested in MANGA, Big N, Fintech, HFTs, and
+              start-up companies.
+              <br />
+              If you'd like to reach out to me, send me an email:
+              jcamyre127@g.ucla.edu
             </Paragraph>
           </Section>
           <Section>

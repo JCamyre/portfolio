@@ -1,5 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
+import styles from './navbar.module.css'
 
 import {
   Container,
@@ -24,6 +25,7 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href // if user is on this page, then their path === this item's href
 
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
+
   // Link is UI, NextLink is handling logic
   return (
     <NextLink href={href}>
@@ -31,6 +33,7 @@ const LinkItem = ({ href, path, children }) => {
         pg={2}
         bg={active ? 'glassTeal' : undefined}
         color={active ? '@  #202030' : inactiveColor}
+        className={styles.navItem}
       >
         {children}
       </Link>
@@ -81,9 +84,6 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
         </Stack>
         <Box flex={1} align="right">
           <ThemeToggleButton />
@@ -102,9 +102,6 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                {/* <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink> */}
               </MenuList>
             </Menu>
           </Box>

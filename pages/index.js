@@ -11,7 +11,6 @@ import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 
 const Page = () => {
@@ -55,24 +54,33 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          {/* When you make a styled tag, you can use it like a component, with all the css styling */}
           <Paragraph>
-            Joseph is currently working on{' '}
-            <NextLink href="/works/lunatrading">
-              <Link>Lunatrading</Link>
-            </NextLink>
-            .
+            I am currently working at{' '}
+            <a href="https://www.viasat.com/">
+              <Link>Viasat </Link>
+            </a>
+            as a Frontend Web Dev Intern, where I am building their component
+            library for all of their websites and apps, reaching 100,000's of
+            Viasat customers.
             <br />
             <Paragraph>
-              He is the Full-Stack Developer and Webmaster for the{' '}
-              {/* target="_blank" ref="noreferrer" */}
-              <a href="https://chips.ucla.edu">CHIPS</a> (Center for
-              Heterogeneous Integration and Performance Scaling) Lab at UCLA. He
-              is also a part of a start-up with UCLA DevX called Data Den, a
-              data analytics and congretation using surveys and targetting the
-              college student demographic.
+              I am also a Frontend Developer for ACM working on{' '}
+              <a href="https://www.uclaacm.com/">
+                <Link>UCLA at ACM's website </Link>
+              </a>
+              as well as their{' '}
+              <a href="https://opensource.uclaacm.com/">
+                <Link>OpenSource website</Link>
+              </a>
+              . I am also the Full-Stack Developer and Webmaster for the{' '}
+              <a href="https://chips.ucla.edu">
+                <Link>CHIPS</Link>
+              </a>{' '}
+              (Center for Heterogeneous Integration and Performance Scaling) Lab
+              at UCLA. He is also a part of a start-up with UCLA DevX called
+              Data Den, a data analytics and congretation using surveys and
+              targetting the college student demographic.
               <br />
-              He is also searching for an internship for the 2022 Summer.
             </Paragraph>
           </Paragraph>
           <Box align="center" my={4}>
@@ -92,23 +100,6 @@ const Page = () => {
           </Box>
         </Section>
         <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            Bio
-          </Heading>
-          <BioSection>
-            <BioYear>2003</BioYear>
-            Born in Santa Rosa, California.
-          </BioSection>
-          <BioSection>
-            <BioYear>2021</BioYear>
-            Started studying CS at UCLA.
-            <br />
-            Started working at CHIPS Lab (UCLA)
-            <br />
-            Started working at UCLA DevX
-          </BioSection>
-        </Section>
-        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             I ♥
           </Heading>
