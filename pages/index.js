@@ -7,14 +7,12 @@ import {
   Button,
   useColorModeValue
 } from '@chakra-ui/react'
-import { useEffect } from 'react';
 import NextLink from 'next/link'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
-import WebFont from 'webfontloader';
 
 const Page = () => {
   return (
