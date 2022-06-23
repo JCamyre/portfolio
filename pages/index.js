@@ -17,7 +17,6 @@ import Layout from '../components/layouts/article'
 import WebFont from 'webfontloader';
 
 const Page = () => {
-
   return (
     <Layout>
       <Container>
