@@ -26,9 +26,29 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section>
+            <WorkGridItem id="yumie" title="Yumie" thumbnail={thumbDataDen}>
+              Data aggregation and analytics using surveys, targetting college
+              demographics
+            </WorkGridItem>
+          </Section>
+          <Section>
             <WorkGridItem
-              id="dataden"
-              title="Data Den"
+              id="viasat"
+              title="Viasat"
+              thumbnail={thumbDataDen}
+            ></WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="Acm"
+              title="ACM at UCLA"
+              thumbnail={thumbDataDen}
+            ></WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="dandelion"
+              title="Dandelion"
               thumbnail={thumbDataDen}
             >
               Data aggregation and analytics using surveys, targetting college
