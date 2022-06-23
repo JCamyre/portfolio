@@ -24,10 +24,10 @@ export default function About() {
           <Section>
             <Paragraph>
               I am a CS major at UCLA and a Full-Stack developer focusing on web
-              development and mobile development. I'm a Frontend Web Dev Intern
+              development and mobile development. I am a Frontend Web Dev Intern
               for Viasat, where I will be building their component library for
-              all of their websites and apps, where I will reach 100,000's of
-              Viasat customers. I am currently working at the CHIPS lab at UCLA
+              all of their websites and apps, where I will reach 100,000s of
+              Viasat customers. I'm currently working at the CHIPS lab at UCLA
               maintaining, upgrading, and building new websites for them. I am
               also the Lead Frontend Developer and Project Manager for Yumie, a
               data aggregation and social media app targeted at college
@@ -41,7 +41,7 @@ export default function About() {
               development. Interested in MANGA, Big N, Fintech, HFTs, and
               start-up companies.
               <br />
-              If you'd like to reach out to me, send me an email:
+              If you want to build something, send an email:
               jcamyre127@g.ucla.edu
             </Paragraph>
           </Section>
