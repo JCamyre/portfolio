@@ -1,22 +1,24 @@
 import { Container, Heading, Image } from '@chakra-ui/react'
-import Section from '../../components/section.js'
 // import Paragraph from '../../components/paragraph'
+// divider from '@chakra-ui/react'
+import Section from '../../components/section.js'
 // import { WorkGridItem } from '../../components/grid-item'
 // import Layout from '../../components/layouts/article'
 
-import thumbDataDen from '../../public/images/dataden.png'
+import thumbLunatrading from '../../public/images/lunatradinglogo.png'
 import { useEffect } from 'react'
 
-export default function Dataden(props) {
+export default function Viasat(props) {
   useEffect(() => {
-    console.log(props)
+    const { path } = props
+    console.log(path)
   })
 
   return (
     <Container>
       <Section>
-        <Heading>Dataden</Heading>
-        <Image src={thumbDataDen} alt="DataDen logo" />
+        <Heading>Viasat</Heading>
+        <Image src={thumbLunatrading} alt="Lunatrading Logo" />
       </Section>
     </Container>
   )
