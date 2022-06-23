@@ -5,19 +5,20 @@ import Section from '../../components/section.js'
 import { WorkGridItem } from '../../components/grid-item'
 import Layout from '../../components/layouts/article'
 
-import thumbDataDen from '../../public/images/dataden.png'
+import thumbLunatrading from '../../public/images/lunatradinglogo.png'
 import { useEffect } from 'react'
 
-export default function Dataden(props) {
+export default function Lunatrading(props) {
   useEffect(() => {
-    console.log(props)
+    const { path } = props
+    console.log(path)
   })
 
   return (
     <Container>
       <Section>
-        <Heading>Dataden</Heading>
-        <Image src={thumbDataDen} alt="DataDen logo" />
+        <Heading>Lunatrading</Heading>
+        <Image src={thumbLunatrading} alt="Lunatrading Logo" />
       </Section>
     </Container>
   )
