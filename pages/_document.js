@@ -28,6 +28,10 @@ export default class Document extends NextDocument {
           <link rel="manifest" href="images/site.webmanifest" />
           <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
           <meta name="theme-color" content="#ffffff" />
+          <meta
+            httpEquiv="Content-Type"
+            content="text/html; charset=ISO-8859-1"
+          ></meta>
 
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
