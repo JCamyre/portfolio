@@ -5,6 +5,44 @@ import Section from '../components/section'
 import { React } from 'react'
 
 export default function About() {
+  const languages = [
+    'Python',
+    'TypeScript',
+    'JavaScript',
+    'C++',
+    'HTML',
+    'SASS',
+    'CSS',
+    'SQL',
+    'R',
+    'Go',
+    'AJAX',
+    'Java'
+  ]
+
+  const frameworks = [
+    'React JS',
+    'Next.js',
+    'React Native',
+    'Django',
+    'Express',
+    'Svelte'
+  ]
+
+  const technologies = [
+    'Amazon AWS',
+    'PostgreSQL',
+    'MongoDB',
+    'Cockroach DB',
+    'MySQL',
+    'Node.js',
+    'Git',
+    'Jira',
+    'Vercel',
+    'Heroku',
+    'Googling'
+  ]
+
   return (
     <Layout>
       <Container>
@@ -41,6 +79,7 @@ export default function About() {
               development. Interested in MANGA, Big N, Fintech, HFTs, and
               start-up companies.
               <br />
+              <br />
               If you want to build something, send an email:
               jcamyre127@g.ucla.edu
             </Paragraph>
@@ -50,50 +89,34 @@ export default function About() {
               <Box>
                 <Heading fontSize={18}>Languages</Heading>
                 <Paragraph align="center">
-                  Python
-                  <br />
-                  JavaScript
-                  <br />
-                  C++
-                  <br />
-                  TypeScript
-                  <br />
-                  HTML
-                  <br />
-                  SQL
-                  <br />
-                  Ruby
-                  <br />
-                  Swift
-                  <br />
+                  {languages.map(language => (
+                    <>
+                      {language}
+                      <br />
+                    </>
+                  ))}
                 </Paragraph>
               </Box>
               <Box>
                 <Heading fontSize={18}>Frameworks</Heading>
                 <Paragraph>
-                  React
-                  <br />
-                  React Native
-                  <br />
-                  Next.js
-                  <br />
-                  Gatsby.js
-                  <br />
-                  Express
-                  <br />
-                  Node.js
-                  <br />
+                  {frameworks.map(framework => (
+                    <>
+                      {framework}
+                      <br />
+                    </>
+                  ))}
                 </Paragraph>
               </Box>
               <Box>
                 <Heading fontSize={18}>Other</Heading>
                 <Paragraph>
-                  AWS
-                  <br />
-                  PostgreSQL
-                  <br />
-                  MongoDB
-                  <br />
+                  {technologies.map(technology => (
+                    <>
+                      {technology}
+                      <br />
+                    </>
+                  ))}
                 </Paragraph>
               </Box>
             </SimpleGrid>
