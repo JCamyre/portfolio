@@ -77,9 +77,9 @@ const Page = () => {
                 <Link>CHIPS</Link>
               </a>{' '}
               (Center for Heterogeneous Integration and Performance Scaling) Lab
-              at UCLA. He is also a part of a start-up with UCLA DevX called
-              Data Den, a data analytics and congretation using surveys and
-              targetting the college student demographic.
+              at UCLA. I also work at a start-up called Yumie, a data analytics
+              and congretation app using surveys and targetting the college
+              student demographic.
               <br />
             </Paragraph>
           </Paragraph>
@@ -92,21 +92,23 @@ const Page = () => {
           </Box>
           <Box align="center" my={1}>
             {/* Some issue with this rn: target="_blank" ref="noreferrer" */}
-            <a href="https://github.com/JCamyre">
+            <a
+              href="https://github.com/JCamyre"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Github Profile
               </Button>
             </a>
           </Box>
-        </Section>
-        <Section delay={0.2}>
-          <Heading as="h3" variant="section-title">
-            I ♥
-          </Heading>
-          <Paragraph>
-            Playing guitar, Working out, Trading stocks, Speed typing, Tennis,
-            UI/UX design, Cars, Machine learning/A.I, Spicy food
-          </Paragraph>
+          <Box align="center" my={1}>
+            <a href="#">
+              <Button rightIcon={<ChevonRightIcon />} colorScheme="teal">
+                My resume
+              </Button>
+            </a>
+          </Box>
         </Section>
       </Container>
     </Layout>

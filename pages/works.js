@@ -50,10 +50,7 @@ const Works = () => {
               id="dandelion"
               title="Dandelion"
               thumbnail={thumbDataDen}
-            >
-              Data aggregation and analytics using surveys, targetting college
-              demographics
-            </WorkGridItem>
+            ></WorkGridItem>
           </Section>
         </SimpleGrid>
       </Container>
