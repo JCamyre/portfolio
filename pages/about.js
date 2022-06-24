@@ -51,7 +51,7 @@ export default function About() {
         </Heading>
         <SimpleGrid>
           <Section>
-            <Box align="center">
+            <Box align="center" borderRadius="lg" backgroundColor="white">
               <Image
                 maxWidth="350px"
                 src="https://content.sportslogos.net/logos/35/882/full/3572_ucla_bruins-alternate-1973.png"

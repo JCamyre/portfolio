@@ -24,19 +24,18 @@ const Logo = () => {
   const footPrintImg = `/images/icicles.png`
 
   return (
-    <Link href="/">
-      <a>
-        <LogoBox>
-          <Image src={footPrintImg} width={20} height={20} alt="logo" />
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontWeight="bold"
-            ml={3}
-          >
-            Joseph Camyre
-          </Text>
-        </LogoBox>
-      </a>
+    <Link href="/" style={{ height: 0 }}>
+      <LogoBox>
+        <Image src={footPrintImg} width={20} height={20} alt="logo" />
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontWeight="bold"
+          ml={3}
+          letterSpacing="tighter"
+        >
+          Joseph Camyre
+        </Text>
+      </LogoBox>
     </Link>
   )
 }
