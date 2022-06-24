@@ -64,9 +64,7 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
-            <Logo />
-          </Heading>
+          <Logo />
         </Flex>
         {/* how do these base and md keys work, based on size of window? */}
         <Stack

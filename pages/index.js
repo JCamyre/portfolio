@@ -104,7 +104,7 @@ const Page = () => {
           </Box>
           <Box align="center" my={1}>
             <a href="#">
-              <Button rightIcon={<ChevonRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My resume
               </Button>
             </a>
