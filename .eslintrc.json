@@ -9,7 +9,7 @@
                 "varsIgnorePattern": "^_"
             }
         ],
-        "no-escaped-entities": 1,
+        "no-escaped-entities": false,
         "@next/next/no-document-import-in-page": 0
     }
 }
