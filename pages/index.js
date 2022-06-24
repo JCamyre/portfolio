@@ -90,20 +90,16 @@ const Page = () => {
               </Button>
             </NextLink>
           </Box>
-          <Box align="center" my={1}>
+          <Box align="center" my={4}>
             {/* Some issue with this rn: target="_blank" ref="noreferrer" */}
-            <a
-              href="https://github.com/JCamyre"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href="https://github.com/JCamyre" target="_blank">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 Github Profile
               </Button>
             </a>
           </Box>
-          <Box align="center" my={1}>
-            <a href="#">
+          <Box align="center" my={4}>
+            <a href="#" target="_blank">
               <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
                 My resume
               </Button>
