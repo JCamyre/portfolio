@@ -11,7 +11,11 @@ function chips() {
         <Heading>CHIPS Lab (UCLA)</Heading>
         <Heading fontSize="24px">Leader Web Developer</Heading>
         <Paragraph>CHIPS Display Site:</Paragraph>
-        <a href="https://github.com/JCamyre/CHIPSDisplaySite" target="_blank">
+        <a
+          href="https://github.com/JCamyre/CHIPSDisplaySite"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Link>
             <Image src={chips_logo} alt="CHIPS Logo" />
           </Link>

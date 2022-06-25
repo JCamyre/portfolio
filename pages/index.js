@@ -29,6 +29,8 @@ const Message = children => {
 }
 
 const Page = () => {
+  const boxColor = useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')
+
   const [showMessage, setShowMessage] = useState(false)
 
   return (
@@ -73,13 +75,7 @@ const Page = () => {
         )} */}
         {showMessage && (
           <Section delay={0.08}>
-            <Box
-              borderRadius="lg"
-              bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-              p={3}
-              mb={6}
-              align="center"
-            >
+            <Box borderRadius="lg" bg={boxColor} p={3} mb={6} align="center">
               Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer
               Science!
             </Box>
@@ -126,8 +122,11 @@ const Page = () => {
             </NextLink>
           </Box>
           <Box align="center" my={4}>
-            {/* Some issue with this rn: target="_blank" ref="noreferrer" */}
-            <a href="https://github.com/JCamyre" target="_blank">
+            <a
+              href="https://github.com/JCamyre"
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
                 Github Profile
               </Button>
