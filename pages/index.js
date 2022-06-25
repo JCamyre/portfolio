@@ -60,6 +60,7 @@ const Page = () => {
             alt="Profile Picture"
             onClick={() => setShowMessage(!showMessage)}
             style={{ cursor: 'pointer' }}
+            className="profile-pic"
           />
         </Box>
         {/* {!showMessage && (
