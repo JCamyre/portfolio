@@ -31,7 +31,7 @@ const LinkItem = ({ href, path, children }) => {
     <NextLink href={href}>
       <Link
         pg={2}
-        bg={active ? 'glassTeal' : undefined}
+        bg={active ? 'green' : undefined}
         color={active ? '@  #202030' : inactiveColor}
         className={styles.navItem}
       >
@@ -64,7 +64,9 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Logo />
+          <span>
+            <Logo />
+          </span>
         </Flex>
         {/* how do these base and md keys work, based on size of window? */}
         <Stack

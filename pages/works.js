@@ -5,7 +5,11 @@ import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
 
 import thumbLunatrading from '../public/images/lunatradinglogo.png'
-import thumbDataDen from '../public/images/dataden.png'
+import thumbYumie from '../public/images/yumie-logo.jpg'
+import thumbAcm from '../public/images/acm-logo.png'
+import thumbViasat from '../public/images/viasat-logo.png'
+import thumbDandelion from '../public/images/dandelion-logo.png'
+import thumbChips from '../public/images/Chips-logo.png'
 
 const Works = () => {
   return (
@@ -17,6 +21,37 @@ const Works = () => {
         <SimpleGrid column={[1, 1, 2]} gap={6}>
           <Section>
             <WorkGridItem
+              id="viasat"
+              title="Viasat"
+              thumbnail={thumbViasat}
+              // bg="white"
+              // borderRadius="24px"
+            ></WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="chips"
+              title="Chips"
+              thumbnail={thumbChips}
+            ></WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
+              id="Acm"
+              title="ACM at UCLA"
+              thumbnail={thumbAcm}
+              height="400"
+            ></WorkGridItem>
+          </Section>
+
+          <Section>
+            <WorkGridItem id="yumie" title="Yumie" thumbnail={thumbYumie}>
+              Data aggregation and analytics using surveys, targetting college
+              demographics
+            </WorkGridItem>
+          </Section>
+          <Section>
+            <WorkGridItem
               id="lunatrading"
               title="Lunatrading"
               thumbnail={thumbLunatrading}
@@ -26,30 +61,10 @@ const Works = () => {
             </WorkGridItem>
           </Section>
           <Section>
-            <WorkGridItem id="yumie" title="Yumie" thumbnail={thumbDataDen}>
-              Data aggregation and analytics using surveys, targetting college
-              demographics
-            </WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
-              id="viasat"
-              title="Viasat"
-              thumbnail={thumbDataDen}
-            ></WorkGridItem>
-          </Section>
-          <Section>
-            <WorkGridItem
-              id="Acm"
-              title="ACM at UCLA"
-              thumbnail={thumbDataDen}
-            ></WorkGridItem>
-          </Section>
-          <Section>
             <WorkGridItem
               id="dandelion"
               title="Dandelion"
-              thumbnail={thumbDataDen}
+              thumbnail={thumbDandelion}
             ></WorkGridItem>
           </Section>
         </SimpleGrid>

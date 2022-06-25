@@ -12,20 +12,28 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
+import { useState } from 'react'
+
+const Message = children => {
+  return (
+    <Box
+      borderRadius="lg"
+      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+      p={3}
+      mb={6}
+      align="center"
+    >
+      {children}
+    </Box>
+  )
+}
 
 const Page = () => {
+  const [showMessage, setShowMessage] = useState(false)
+
   return (
     <Layout>
       <Container>
-        <Box
-          borderRadius="lg"
-          bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-          p={3}
-          mb={6}
-          align="center"
-        >
-          Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer Science!
-        </Box>
         <Box display={{ md: 'flex' }}></Box>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -48,8 +56,35 @@ const Page = () => {
             borderRadius="full"
             src="/images/joseph.jpg"
             alt="Profile Picture"
+            onClick={() => setShowMessage(!showMessage)}
+            style={{ cursor: 'pointer' }}
           />
         </Box>
+        {/* {!showMessage && (
+          <Box
+            borderRadius="lg"
+            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+            p={3}
+            mb={6}
+            align="center"
+          >
+            Click my picture!
+          </Box>
+        )} */}
+        {showMessage && (
+          <Section delay={0.08}>
+            <Box
+              borderRadius="lg"
+              bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
+              p={3}
+              mb={6}
+              align="center"
+            >
+              Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer
+              Science!
+            </Box>
+          </Section>
+        )}
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
             Work
@@ -85,7 +120,7 @@ const Page = () => {
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
                 My portfolio
               </Button>
             </NextLink>
@@ -93,14 +128,14 @@ const Page = () => {
           <Box align="center" my={4}>
             {/* Some issue with this rn: target="_blank" ref="noreferrer" */}
             <a href="https://github.com/JCamyre" target="_blank">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
                 Github Profile
               </Button>
             </a>
           </Box>
           <Box align="center" my={4}>
             <a href="#" target="_blank">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
+              <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
                 My resume
               </Button>
             </a>
