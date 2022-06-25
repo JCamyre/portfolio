@@ -16,6 +16,7 @@ const LogoBox = styled.span`
   &:hover {
     transform: scale(1.05, 1.05);
     transition-duration: 300ms;
+    cursor: pointer;
   }
 `
 

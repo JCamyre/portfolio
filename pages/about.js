@@ -50,7 +50,7 @@ export default function About() {
           About
         </Heading>
         <SimpleGrid>
-          <Section>
+          <Section delay={0.1}>
             <Box align="center" borderRadius="lg" backgroundColor="white">
               <Image
                 maxWidth="350px"
@@ -59,20 +59,25 @@ export default function About() {
               />
             </Box>
           </Section>
-          <Section>
+          <Section delay={0.1}>
             <Paragraph>
-              I am a CS major at UCLA and a Full-Stack developer focusing on web
-              development and mobile development. I am a Frontend Web Dev Intern
-              for Viasat, where I will be building their component library for
-              all of their websites and apps, where I will reach 100,000s of
-              Viasat customers. I'm currently working at the CHIPS lab at UCLA
-              maintaining, upgrading, and building new websites for them. I am
-              also the Lead Frontend Developer and Project Manager for Yumie, a
-              data aggregation and social media app targeted at college
-              students. I assign tasks, help those who are running into issues,
-              and do my best to make sure we reach our deadlines. We currently
-              have a team of about 5 frontend engineers and about 20 people
-              total. I am also a Dev Team Officer for ACM at UCLA, where I help
+              Hey, I am a CS major at UCLA and a Full-Stack developer focusing
+              on web development and mobile development! I am a Frontend Web Dev
+              Intern for Viasat, where I will be building their component
+              library for all of their websites and apps, where I will reach
+              100,000s of Viasat customers.
+              <br />
+              <br />
+              I'm currently working at the CHIPS lab at UCLA maintaining,
+              upgrading, and building new websites for them. I am also the Lead
+              Frontend Developer and Project Manager for Yumie, a data
+              aggregation and social media app targeted at college students. I
+              assign tasks, help those who are running into issues, and do my
+              best to make sure we reach our deadlines. We currently have a team
+              of about 5 frontend engineers and about 20 people total.
+              <br />
+              <br />
+              I am also a Dev Team Officer for ACM at UCLA, where I help
               coordinate events, assign tasks to other engineers, and help
               resolve issues within the team. I will be a Software Engineer
               after graduation, most likely specializing in Full-Stack or Mobile
@@ -84,7 +89,7 @@ export default function About() {
               jcamyre127@g.ucla.edu
             </Paragraph>
           </Section>
-          <Section>
+          <Section delay={0.2}>
             <SimpleGrid columns={3} spacing={20}>
               <Box>
                 <Heading fontSize={18}>Languages</Heading>
