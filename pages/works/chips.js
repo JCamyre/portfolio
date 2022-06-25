@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Box, Link, Header } from '@chakra-ui/react'
+import { Container, Box, Link, Heading, Image } from '@chakra-ui/react'
 import Paragraph from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import chips_logo from '../../public/images/chips-logo.png'
@@ -8,8 +8,8 @@ function chips() {
   return (
     <Layout>
       <Container>
-        <Header>CHIPS Lab (UCLA)</Header>
-        <Header fontSize="24px">Leader Web Developer</Header>
+        <Heading>CHIPS Lab (UCLA)</Heading>
+        <Heading fontSize="24px">Leader Web Developer</Heading>
         <Paragraph>CHIPS Display Site:</Paragraph>
         <a href="https://github.com/JCamyre/CHIPSDisplaySite" target="_blank">
           <Link>
