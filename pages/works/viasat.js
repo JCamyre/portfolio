@@ -20,7 +20,7 @@ export default function Viasat(props) {
       <Section>
         <Heading>Viasat</Heading>
         <Heading fontSize="24px">Frontend Web Developer Intern</Heading>
-        <a href="https://www.viasat.com" target="_blank">
+        <a href="https://www.viasat.com" target="_blank" rel="noreferrer">
           <Link>
             <Image src={thumbViasat} alt="Viasat Logo" />
           </Link>
