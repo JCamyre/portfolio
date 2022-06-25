@@ -9,7 +9,7 @@ import thumbYumie from '../public/images/yumie-logo.jpg'
 import thumbAcm from '../public/images/acm-logo.png'
 import thumbViasat from '../public/images/viasat-logo.png'
 import thumbDandelion from '../public/images/dandelion-logo.png'
-import thumbChips from '../public/images/Chips-logo.png'
+import thumbChips from '../public/images/chips-logo.png'
 
 const Works = () => {
   return (
