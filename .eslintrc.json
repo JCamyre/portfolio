@@ -3,13 +3,13 @@
     "extends": "next",
     "rules": {
         "no-unused-vars": [
-            "error",
+            "off",
             {
                 "argsIgnorePattern": "^_",
                 "varsIgnorePattern": "^_"
             }
         ],
-        "no-escaped-entities": 0,
+        "no-escaped-entities": "off",
         "@next/next/no-document-import-in-page": 0
     }
 }
