@@ -1,4 +1,4 @@
-import { Container, Heading, Image } from '@chakra-ui/react'
+import { Container, Heading, Image, Box } from '@chakra-ui/react'
 import Paragraph from '../../components/paragraph'
 // divider from '@chakra-ui/react'
 import Section from '../../components/section.js'
@@ -25,14 +25,15 @@ export default function Acm(props) {
         >
           <Image src="/images/acm-logo.png" alt="ACM Logo" />
         </a>
-
-        <a
-          href="https://opensource.uclaacm.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Image src="/images/acm-logo2.png" alt="ACM Logo 2" />
-        </a>
+        <Box align="center">
+          <a
+            href="https://opensource.uclaacm.com"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Image src="/images/acm-logo2.png" alt="ACM Logo 2" />
+          </a>
+        </Box>
 
         <Paragraph>
           ● Deployed computing department’s portal on AWS CloudFront to handle

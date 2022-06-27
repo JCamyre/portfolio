@@ -1,4 +1,4 @@
-import { Container, Heading, Image } from '@chakra-ui/react'
+import { Container, Heading, Image, Box } from '@chakra-ui/react'
 import Paragraph from '../../components/paragraph'
 // divider from '@chakra-ui/react'
 import Section from '../../components/section.js'
@@ -18,7 +18,9 @@ export default function Lunatrading(props) {
     <Container>
       <Section>
         <Heading>Lunatrading</Heading>
-        <Image src="/images/lunatradinglogo.png" alt="Lunatrading Logo" />
+        <Box align="center">
+          <Image src="/images/lunatradinglogo.png" alt="Lunatrading Logo" />
+        </Box>
       </Section>
       <Section>
         <Paragraph>
