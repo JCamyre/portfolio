@@ -19,7 +19,11 @@ export default function Dandelion(props) {
       <Layout>
         <Section>
           <Heading>Dandelion</Heading>
-          <Image src={thumbLunatrading} alt="Lunatrading Logo" />
+          <Image
+            borderRadius="16px"
+            src="/images/dandelion-logo.png"
+            alt="Lunatrading Logo"
+          />
         </Section>
       </Layout>
     </Container>
