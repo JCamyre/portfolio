@@ -1,12 +1,7 @@
 import { Container, Heading, Image, Link } from '@chakra-ui/react'
 import Paragraph from '../../components/paragraph.js'
-// import Paragraph from '../../components/paragraph'
-// divider from '@chakra-ui/react'
 import Section from '../../components/section.js'
-// import { WorkGridItem } from '../../components/grid-item'
-// import Layout from '../../components/layouts/article'
 
-import thumbViasat from '../../public/images/viasat-logo.png'
 import { useEffect } from 'react'
 
 export default function Viasat(props) {
@@ -22,10 +17,21 @@ export default function Viasat(props) {
         <Heading fontSize="24px">Frontend Web Developer Intern</Heading>
         <a href="https://www.viasat.com" target="_blank" rel="noreferrer">
           <Link>
-            <Image src={thumbViasat} alt="Viasat Logo" />
+            <Image src="/images/viasat-logo.png" alt="Viasat Logo" />
           </Link>
         </a>
-        <Paragraph>test</Paragraph>
+        <Paragraph>
+          ● Viasat Beam team member, build React component library for all
+          Viasat Frontend Developers using TypeScript, SASS, HTML, Storybook,
+          impacting 100,000’s of Viasat customers’ website experience
+          <br />
+          ● Utilize Storybook to streamline the process of designing accessible
+          and user-friendly interfaces
+          <br />
+          ● Leveraged Cypress to ensure accessibility and functionality for any
+          scenario
+          <br />
+        </Paragraph>
       </Section>
     </Container>
   )
