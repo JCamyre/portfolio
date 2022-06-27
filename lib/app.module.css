@@ -1,0 +1,4 @@
+.regular-button {
+    transition-duration: 300ms;
+    transform: scale(1.05, 1.05);
+}

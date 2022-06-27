@@ -13,6 +13,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { useState } from 'react'
+import '../lib/app.module.css'
 
 const Message = children => {
   return (
@@ -63,20 +64,16 @@ const Page = () => {
             className="profile-pic"
           />
         </Box>
-        {/* {!showMessage && (
-          <Box
-            borderRadius="lg"
-            bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
-            p={3}
-            mb={6}
-            align="center"
-          >
-            Click my picture!
-          </Box>
-        )} */}
         {showMessage && (
           <Section delay={0.08}>
-            <Box borderRadius="lg" bg={boxColor} p={3} mb={6} align="center">
+            <Box
+              borderRadius="lg"
+              bg={boxColor}
+              mt={5}
+              p={3}
+              mb={6}
+              align="center"
+            >
               Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer
               Science!
             </Box>
@@ -117,12 +114,16 @@ const Page = () => {
           </Paragraph>
           <Box align="center" my={4}>
             <NextLink href="/works">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
+              <Button
+                className="regular-button"
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="yellow"
+              >
                 My portfolio
               </Button>
             </NextLink>
           </Box>
-          <Box align="center" my={4}>
+          <Box align="center" my={4} className="regular-button">
             <a
               href="https://github.com/JCamyre"
               target="_blank"
@@ -134,11 +135,23 @@ const Page = () => {
             </a>
           </Box>
           <Box align="center" my={4}>
-            <a href="#" target="_blank">
-              <Button rightIcon={<ChevronRightIcon />} colorScheme="yellow">
-                My resume
-              </Button>
-            </a>
+            <object
+              data="/files/Joseph_S_Camyre_Resume.pdf"
+              type="aplication/pdf"
+              width="100%"
+              height="100%"
+            >
+              {' '}
+              <a href="/files/Joseph_S_Camyre_Resume.pdf" target="_blank">
+                <Button
+                  className="regular-button"
+                  rightIcon={<ChevronRightIcon />}
+                  colorScheme="yellow"
+                >
+                  My resume
+                </Button>
+              </a>
+            </object>
           </Box>
         </Section>
       </Container>
