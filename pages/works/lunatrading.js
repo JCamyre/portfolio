@@ -1,5 +1,5 @@
 import { Container, Heading, Image } from '@chakra-ui/react'
-// import Paragraph from '../../components/paragraph'
+import Paragraph from '../../components/paragraph'
 // divider from '@chakra-ui/react'
 import Section from '../../components/section.js'
 // import { WorkGridItem } from '../../components/grid-item'
@@ -18,7 +18,20 @@ export default function Lunatrading(props) {
     <Container>
       <Section>
         <Heading>Lunatrading</Heading>
-        <Image src={thumbLunatrading} alt="Lunatrading Logo" />
+        <Image src="/images/lunatradinglogo.png" alt="Lunatrading Logo" />
+      </Section>
+      <Section>
+        <Paragraph>
+          ● Built stock information presenter SPA using React and Django REST
+          Framework
+          <br />
+          ● Deployed on Heroku
+          <br />
+          ● Provisioned a cron job to scrape 17000 stocks daily, perform
+          in-memory processing using pandas under Python and batch insert
+          results to PostgreSQL
+          <br />
+        </Paragraph>
       </Section>
     </Container>
   )

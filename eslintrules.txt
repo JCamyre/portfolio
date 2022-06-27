@@ -1,0 +1,11 @@
+    "rules": {
+        "no-unused-vars": [
+            "off",
+            {
+                "argsIgnorePattern": "^_",
+                "varsIgnorePattern": "^_"
+            }
+        ],
+        "no-escaped-entities": "off",
+        "@next/next/no-document-import-in-page": 0
+    } 
