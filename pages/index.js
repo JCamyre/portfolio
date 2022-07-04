@@ -135,23 +135,16 @@ const Page = () => {
             </a>
           </Box>
           <Box align="center" my={4}>
-            <object
-              data="/files/Joseph_S_Camyre_Resume.pdf"
-              type="aplication/pdf"
-              width="100%"
-              height="100%"
-            >
-              {' '}
-              <a href="/files/Joseph_S_Camyre_Resume.pdf" target="_blank">
-                <Button
-                  className="regular-button"
-                  rightIcon={<ChevronRightIcon />}
-                  colorScheme="yellow"
-                >
-                  My resume
-                </Button>
-              </a>
-            </object>
+            {' '}
+            <a href="/files/Joseph_S_Camyre_Resume.pdf" target="_blank">
+              <Button
+                className="regular-button"
+                rightIcon={<ChevronRightIcon />}
+                colorScheme="yellow"
+              >
+                My resume
+              </Button>
+            </a>
           </Box>
         </Section>
       </Container>
