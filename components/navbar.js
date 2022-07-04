@@ -33,6 +33,7 @@ const LinkItem = ({ href, path, children }) => {
         pg={2}
         bg={active ? 'green' : undefined}
         color={active ? '@  #202030' : inactiveColor}
+        textDecoration={'none'}
         className={styles.navItem}
       >
         {children}
@@ -43,6 +44,7 @@ const LinkItem = ({ href, path, children }) => {
 
 // Not perfectly aligned
 const Navbar = props => {
+  // whenever we navigate to a page, the path is passed as an argument, retrieve from the props parameter.
   const { path } = props
 
   // So you can do <p {...props}></p> and it will load in all props passed in. Wow, so convenient
