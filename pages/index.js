@@ -14,6 +14,8 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import { useState } from 'react'
 import '../lib/app.module.css'
+import About from '../components/about.js'
+import Works from '../components/works.js'
 
 const Message = children => {
   return (
@@ -147,6 +149,17 @@ const Page = () => {
             </a>
           </Box>
         </Section>
+      </Container>
+      <Container id="about">
+        <br />
+        <br />
+        <hr style={{ color: 'lime', height: '3px' }} />
+        <About />
+      </Container>
+      <Container id="works">
+        <br />
+        <br />
+        <Works />
       </Container>
     </Layout>
   )
