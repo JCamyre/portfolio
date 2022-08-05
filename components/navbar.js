@@ -80,10 +80,10 @@ const Navbar = props => {
           mt={{ base: 4, nmd: 0 }}
         >
           {/* href is for the url, path is the internal path to the react page, why do they have the same path variable */}
-          <LinkItem href="#about" path={path}>
+          <LinkItem href="/#about" path={path}>
             About
           </LinkItem>
-          <LinkItem href="#works" path={path}>
+          <LinkItem href="/#works" path={path}>
             Works
           </LinkItem>
         </Stack>

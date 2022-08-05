@@ -38,7 +38,10 @@ const Page = () => {
 
   return (
     <Layout>
-      <Container>
+      <Container id="home">
+        <br />
+        <br />
+        <hr style={{ color: 'yellow', height: '20px' }} />
         <Box display={{ md: 'flex' }}></Box>
         <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
@@ -153,12 +156,13 @@ const Page = () => {
       <Container id="about">
         <br />
         <br />
-        <hr style={{ color: 'lime', height: '3px' }} />
+        <hr style={{ color: 'yellow', height: '20px' }} />
         <About />
       </Container>
       <Container id="works">
         <br />
         <br />
+        <hr style={{ color: 'yellow', height: '20px' }} />
         <Works />
       </Container>
     </Layout>

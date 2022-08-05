@@ -25,7 +25,7 @@ const Logo = () => {
   const footPrintImg = `/images/icicles.png`
 
   return (
-    <Link passHref={true} href="/" style={{ height: 0 }}>
+    <Link passHref={true} href="/#home" style={{ height: 0 }}>
       <LogoBox>
         <Image
           src={footPrintImg}

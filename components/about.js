@@ -85,8 +85,7 @@ export default function About() {
               start-up companies.
               <br />
               <br />
-              If you want to build something, send an email:
-              jcamyre127@g.ucla.edu
+              Send me an email: jcamyre127@g.ucla.edu
             </Paragraph>
           </Section>
           <Section delay={0.2}>
