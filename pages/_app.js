@@ -13,7 +13,7 @@ const Website = ({ Component, pageProps, router }) => {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GOOGLE_INSIGHTS_KEY}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-TH2VWY74G3`}
       />
       <Script
         id="google-analytics"
@@ -23,7 +23,7 @@ const Website = ({ Component, pageProps, router }) => {
           window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', "${process.env.GOOGLE_INSIGHTS_KEY}", {
+              gtag('config', 'G-TH2VWY74G3', {
               page_path: window.location.pathname,
               });
               `
