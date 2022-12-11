@@ -23,7 +23,7 @@ const Website = ({ Component, pageProps, router }) => {
           window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', ${process.env.GOOGLE_INSIGHTS_KEY}, {
+              gtag('config', "${process.env.GOOGLE_INSIGHTS_KEY}", {
               page_path: window.location.pathname,
               });
               `
