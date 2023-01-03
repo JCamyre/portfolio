@@ -11,24 +11,6 @@ import Script from 'next/script'
 const Website = ({ Component, pageProps, router }) => {
   return (
     <>
-      <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-TH2VWY74G3`}
-      />
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-TH2VWY74G3', {
-              page_path: window.location.pathname,
-              });
-              `
-        }}
-      />
       <ChakraProvider theme={theme}>
         <Head>
           <link
@@ -48,6 +30,20 @@ const Website = ({ Component, pageProps, router }) => {
             sizes="180x180"
             href="images/apple-touch-icon.png"
           />
+          <Script
+            strategy="afterInteractive"
+            src={`https://www.googletagmanager.com/gtag/js?id=G-TH2VWY74G3`}
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+          window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-TH2VWY74G3', {
+              page_path: window.location.pathname,
+              });
+              `}
+          </Script>
         </Head>
         <Fonts />
         <Layout router={router}>
