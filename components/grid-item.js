@@ -32,7 +32,7 @@ export const WorkGridItem = ({
   bg = null,
   ...props
 }) => (
-  <Box align="center" bg={bg} borderRadius={props.borderRadius}>
+  <Box align="center" bg={bg} borderRadius={props.borderRadius} id={id}>
     <NextLink href={`/works/${id}`}>
       <LinkBox cursor="pointer">
         <Image

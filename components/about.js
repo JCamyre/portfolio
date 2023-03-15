@@ -68,7 +68,7 @@ export default function About() {
               100,000s of Viasat customers.
               <br />
               <br />
-              I'm currently working at the CHIPS lab at UCLA maintaining,
+              I&apos;m currently working at the CHIPS lab at UCLA maintaining,
               upgrading, and building new websites for them. I am also the Lead
               Frontend Developer and Project Manager for Yumie, a data
               aggregation and social media app targeted at college students. I
@@ -95,7 +95,7 @@ export default function About() {
                 <Paragraph align="center">
                   {languages.map(language => (
                     <>
-                      {language}
+                      <p key={language}>{language}</p>
                       <br />
                     </>
                   ))}
@@ -106,7 +106,7 @@ export default function About() {
                 <Paragraph>
                   {frameworks.map(framework => (
                     <>
-                      {framework}
+                      <p key={framework}>{framework}</p>
                       <br />
                     </>
                   ))}
@@ -117,7 +117,7 @@ export default function About() {
                 <Paragraph>
                   {technologies.map(technology => (
                     <>
-                      {technology}
+                      <p key={technology}>{technology}</p>
                       <br />
                     </>
                   ))}

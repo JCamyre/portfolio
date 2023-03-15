@@ -12,7 +12,7 @@ const Website = ({ Component, pageProps, router }) => {
   return (
     <>
       <ChakraProvider theme={theme}>
-        <Head>
+        <head>
           <link
             rel="icon"
             type="image/png"
@@ -44,7 +44,7 @@ const Website = ({ Component, pageProps, router }) => {
               });
               `}
           </Script>
-        </Head>
+        </head>
         <Fonts />
         <Layout router={router}>
           <AnimatePresence exitBeforeEnter initial={true}>

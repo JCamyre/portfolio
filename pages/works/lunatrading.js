@@ -4,6 +4,7 @@ import Paragraph from '../../components/paragraph'
 import Section from '../../components/section.js'
 // import { WorkGridItem } from '../../components/grid-item'
 // import Layout from '../../components/layouts/article'
+import WorkLayout from '../../components/layouts/workLayout'
 
 import thumbLunatrading from '../../public/images/lunatradinglogo.png'
 import { useEffect } from 'react'
@@ -15,25 +16,9 @@ export default function Lunatrading(props) {
   })
 
   return (
-    <Container>
-      <Section>
-        <Heading>Lunatrading</Heading>
-        <Box align="center" mt="20px">
-          <a
-            href="https://github.com/JCamyre/Lunatrading"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src="/images/lunatradinglogo.png"
-              h="100px"
-              alt="Lunatrading Logo"
-            />
-          </a>
-        </Box>
-      </Section>
-      <Section>
-        <Paragraph style={{ lineHeight: '32px' }}>
+    <>
+      <WorkLayout id='lunatrading' title='Lunatrading' image='/images/lunatradinglogo.png' link='https://github.com/JCamyre/Lunatrading' position='Founder'>
+      <Paragraph style={{ lineHeight: '32px' }}>
           My favorite project ever is my Stock Trading Information Web App
           called Lunatrading! I started working on this project out of laziness:
           I was looking at over 10 different websites to get all the information
@@ -52,7 +37,7 @@ export default function Lunatrading(props) {
           results to PostgreSQL
           <br />
         </Paragraph>
-      </Section>
-    </Container>
+      </WorkLayout>
+    </>
   )
 }

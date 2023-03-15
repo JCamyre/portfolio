@@ -94,13 +94,13 @@ const Page = () => {
               <Link>Viasat </Link>
             </a>
             as a Frontend Web Dev Intern, where I am building their component
-            library for all of their websites and apps, reaching 100,000's of
+            library for all of their websites and apps, reaching 100,000&apos;s of
             Viasat customers.
             <br />
             <Paragraph>
               I am also a Frontend Developer for ACM working on{' '}
               <a href="https://www.uclaacm.com/">
-                <Link>UCLA at ACM's website </Link>
+                <Link>UCLA at ACM&apos;s website </Link>
               </a>
               as well as their{' '}
               <a href="https://opensource.uclaacm.com/">
