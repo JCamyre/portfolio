@@ -14,10 +14,7 @@ export default function About() {
     'SASS',
     'CSS',
     'SQL',
-    'R',
     'Go',
-    'AJAX',
-    'Java'
   ]
 
   const frameworks = [
@@ -26,14 +23,12 @@ export default function About() {
     'React Native',
     'Django',
     'Express',
-    'Svelte'
   ]
 
   const technologies = [
     'Amazon AWS',
     'PostgreSQL',
     'MongoDB',
-    'Cockroach DB',
     'MySQL',
     'Node.js',
     'Git',
@@ -68,7 +63,7 @@ export default function About() {
               100,000s of Viasat customers.
               <br />
               <br />
-              I&apos;m currently working at the CHIPS lab at UCLA maintaining,
+              {/* I&apos;m currently working at the CHIPS lab at UCLA maintaining,
               upgrading, and building new websites for them. I am also the Lead
               Frontend Developer and Project Manager for Yumie, a data
               aggregation and social media app targeted at college students. I
@@ -84,7 +79,7 @@ export default function About() {
               development. Interested in MANGA, Big N, Fintech, HFTs, and
               start-up companies.
               <br />
-              <br />
+              <br /> */}
               Send me an email: jcamyre127@g.ucla.edu
             </Paragraph>
           </Section>

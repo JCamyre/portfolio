@@ -7,6 +7,8 @@ import thumbAcm from '../public/images/acm-logo.png'
 import thumbViasat from '../public/images/viasat-logo.png'
 import thumbChips from '../public/images/chips-logo.png'
 import thumbDIPD from '../public/images/DIPD-logo.jpg'
+import thumbBAI from '../public/images/bai-logo.png';
+import thumbDevX from '../public/images/devx-logo.jpg';
 
 const Works = () => {
   return (
@@ -58,7 +60,7 @@ const Works = () => {
               <WorkGridItem
                 id="devx"
                 title="DevX"
-                thumbnail={thumbLunatrading}
+                thumbnail={thumbDevX}
                 width={30}
               >
                 DevX
@@ -77,8 +79,8 @@ const Works = () => {
             <Section>
               <WorkGridItem
                 id="bai"
-                title="BAI (Bruin AI, Quant)"
-                thumbnail={thumbLunatrading}
+                title="BAI (Bruin AI Quant)"
+                thumbnail={thumbBAI}
                 width={30}
               >
                 BAI, BCM

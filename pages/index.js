@@ -59,10 +59,10 @@ const Page = () => {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="200px"
+            maxWidth="50%"
             display="inline-block"
             borderRadius="full"
-            src="/images/joseph.jpg"
+            src="/images/joseph-close.jpg"
             alt="Profile Picture"
             onClick={() => setShowMessage(!showMessage)}
             style={{ cursor: 'pointer' }}
