@@ -59,10 +59,10 @@ const Page = () => {
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="200px"
+            maxWidth="50%"
             display="inline-block"
             borderRadius="full"
-            src="/images/joseph.jpg"
+            src="/images/joseph-close.jpg"
             alt="Profile Picture"
             onClick={() => setShowMessage(!showMessage)}
             style={{ cursor: 'pointer' }}
@@ -89,10 +89,11 @@ const Page = () => {
             Work
           </Heading>
           <Paragraph>
-            I am currently working at{' '}
-            <a href="https://www.viasat.com/">
-              <Link>Viasat </Link>
-            </a>
+            I am incoming Software Engineering Intern at <Link href='https://www.capitalone.com/' target="_blank" rel="noreferrer">Capital One</Link>!
+            I previously interned at{' '}
+            <Link href="https://www.viasat.com/" target="_blank" rel="noreferrer">
+              Viasat
+            </Link>
             as a Frontend Web Dev Intern, where I am building their component
             library for all of their websites and apps, reaching 100,000&apos;s of
             Viasat customers.
@@ -111,14 +112,12 @@ const Page = () => {
                 <Link>CHIPS</Link>
               </a>{' '}
               (Center for Heterogeneous Integration and Performance Scaling) Lab
-              at UCLA. I also work at a start-up called Yumie, a data analytics
-              and congretation app using surveys and targetting the college
-              student demographic.
+              at UCLA.
               <br />
             </Paragraph>
           </Paragraph>
           <Box align="center" my={4}>
-            <NextLink href="/works">
+            <NextLink href="/#works">
               <Button
                 className="regular-button"
                 rightIcon={<ChevronRightIcon />}

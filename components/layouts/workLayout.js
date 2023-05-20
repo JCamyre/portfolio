@@ -2,7 +2,6 @@
 import Section from '../section.js'
 import React from 'react'
 import { Container, Link, Heading, Image, Button } from '@chakra-ui/react'
-import Paragraph from '../paragraph.js'
 
 function WorkLayout({id, title, children, image, link, position}) {
   return (
@@ -11,6 +10,8 @@ function WorkLayout({id, title, children, image, link, position}) {
             <Link href={`/#${id}`}>
                 <Button>Back</Button>
             </Link>
+            <br />
+            <br />
             <Heading>{title}</Heading>
             <a
                 href={link}
@@ -18,9 +19,10 @@ function WorkLayout({id, title, children, image, link, position}) {
                 rel="noreferrer"
             >
                 <div style={{display: 'flex', justifyContent: 'center'}}>
-                    <Image src={image} alt={`${title} Logo`} style={{maxWidth: "50%"}} />
+                    <Image src={image} alt={`${title} Logo`} style={{maxWidth: "50%", borderRadius: '24px'}} />
                 </div>
             </a>
+            <br />
             <Heading fontSize="24px">{position}</Heading>
             <br />
             <Section>
