@@ -70,7 +70,7 @@ const Page = () => {
           />
         </Box>
         {showMessage && (
-          <Section delay={0.08}>
+          <Section delay={0.01}>
             <Box
               borderRadius="lg"
               bg={boxColor}
