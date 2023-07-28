@@ -1,15 +1,14 @@
 import { Container, Heading, SimpleGrid, Stack } from '@chakra-ui/react'
-// divider from '@chakra-ui/react'
 import Section from '../components/section.js'
 import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
-
 import thumbLunatrading from '../public/images/lunatradinglogo.png'
-import thumbYumie from '../public/images/yumie-logo.jpg'
 import thumbAcm from '../public/images/acm-logo.png'
 import thumbViasat from '../public/images/viasat-logo.png'
-import thumbDandelion from '../public/images/dandelion-logo.png'
 import thumbChips from '../public/images/chips-logo.png'
+import thumbDIPD from '../public/images/DIPD-logo.jpg'
+import thumbBAI from '../public/images/bai-logo.png';
+import thumbDevX from '../public/images/devx-logo.jpg';
 
 const Works = () => {
   return (
@@ -25,11 +24,9 @@ const Works = () => {
                 id="viasat"
                 title="Viasat"
                 thumbnail={thumbViasat}
-                // bg="white"
-                // borderRadius="24px"
               >
                 Viasat Beam team member, build React component library,
-                impacting 100,000’s of Viasat customers’ website experience
+                impacting 100,000's of Viasat customers' website experience
               </WorkGridItem>
             </Section>
             <Section>
@@ -48,13 +45,7 @@ const Works = () => {
                 build out main ACM at UCLA website
               </WorkGridItem>
             </Section>
-
-            <Section>
-              <WorkGridItem id="yumie" title="Yumie" thumbnail={thumbYumie}>
-                Data aggregation and analytics using surveys, targetting college
-                demographics
-              </WorkGridItem>
-            </Section>
+            {/* Maybe display the title position here! */}
             <Section>
               <WorkGridItem
                 id="lunatrading"
@@ -67,11 +58,32 @@ const Works = () => {
             </Section>
             <Section>
               <WorkGridItem
-                id="dandelion"
-                title="Dandelion"
-                thumbnail={thumbDandelion}
+                id="devx"
+                title="DevX"
+                thumbnail={thumbDevX}
+                width={30}
               >
-                Bridging access to concerts and venues for all
+                DevX
+              </WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem
+                id="dipd"
+                title="DIPD (Diversity and Inclusion in Product and Data)"
+                thumbnail={thumbDIPD}
+                width={30}
+              >
+                DIPD
+              </WorkGridItem>
+            </Section>
+            <Section>
+              <WorkGridItem
+                id="bai"
+                title="BAI (Bruin AI Quant)"
+                thumbnail={thumbBAI}
+                width={30}
+              >
+                BAI, BCM
               </WorkGridItem>
             </Section>
           </SimpleGrid>

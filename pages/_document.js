@@ -1,6 +1,7 @@
 import { ColorModeScript } from '@chakra-ui/react'
 import NextDocument, { Html, Head, Main, NextScript } from 'next/document'
 import theme from '../lib/theme'
+import Script from 'next/script'
 
 // _document.js affect the base html document of the web application
 export default class Document extends NextDocument {

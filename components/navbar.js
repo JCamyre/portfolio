@@ -56,6 +56,7 @@ const Navbar = props => {
       bg={useColorModeValue('#ffffff40', '#202023080')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
+      // height="100px"
       {...props}
     >
       <Container
@@ -98,10 +99,10 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref>
+                <NextLink href="/#about" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passHref>
+                <NextLink href="/#works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
               </MenuList>
