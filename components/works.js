@@ -9,6 +9,7 @@ import thumbChips from '../public/images/chips-logo.png'
 import thumbDIPD from '../public/images/DIPD-logo.jpg'
 import thumbBAI from '../public/images/bai-logo.png';
 import thumbDevX from '../public/images/devx-logo.jpg';
+import thumbCapitalOne from '../public/images/capital-one.png'
 
 const Works = () => {
   return (
@@ -19,6 +20,15 @@ const Works = () => {
         </Heading>
         <Container w="65%">
           <SimpleGrid column={[1, 1, 2]} gap={6}>
+          <Section>
+              <WorkGridItem
+                id="capitalone"
+                title="Capital One"
+                thumbnail={thumbCapitalOne}
+              >
+                Enhance phone authentication system, reduce the 25% of the 300 million customer support calls a year falsely requiring further verification, improving millions of users&apos; experience and saving over $2 million in Operational Expenses.
+              </WorkGridItem>
+            </Section>
             <Section>
               <WorkGridItem
                 id="viasat"

@@ -14,26 +14,38 @@ export default function About() {
     'SASS',
     'CSS',
     'SQL',
-    'Go',
   ]
 
   const frameworks = [
+    'Django',
+    'Flask',
+    'Fast API',
+    'Express',
     'React JS',
     'Next.js',
     'React Native',
-    'Django',
-    'Express',
+    'Vercel',
   ]
 
   const technologies = [
-    'Amazon AWS',
+    'AWS Lambda',
+    'AWS EC2',
+    'AWS RDS',
+    'AWS SQS',
+    'Kafka',
+    'Splunk',
+    'Snowflake',
+    'Terraform',
+    'Jenkins',
+    'Docker',
+    'Kubernetes',
+    'Linux',
     'PostgreSQL',
     'MongoDB',
     'MySQL',
     'Node.js',
     'Git',
     'Jira',
-    'Vercel',
     'Heroku',
     'Googling'
   ]

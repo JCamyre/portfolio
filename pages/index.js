@@ -88,26 +88,45 @@ const Page = () => {
           <Heading as="h3" variant="section-title">
             Work
           </Heading>
-          <Paragraph>
-            I am incoming Software Engineering Intern at <Link href='https://www.capitalone.com/' target="_blank" rel="noreferrer">Capital One</Link>!
+          <Section>
+            <Paragraph>
+              I am currently a Software Engineering Intern at <Link href='https://www.capitalone.com/' target="_blank" rel="noreferrer">Capital One</Link>!
+              Enhance phone authentication system, reduce the 25% of the 300 million customer support calls a year falsely requiring further verification, improving millions of users&apos; experience and saving over $2 million in Operational Expenses.
+            </Paragraph>
+            <Paragraph>
             I previously interned at{' '}
             <Link href="https://www.viasat.com/" target="_blank" rel="noreferrer">
-              Viasat
+              Viasat{' '}
             </Link>
-            as a Frontend Web Dev Intern, where I am building their component
-            library for all of their websites and apps, reaching 100,000&apos;s of
-            Viasat customers.
-            <br />
+              as a Frontend Web Dev Intern, where I am building their component
+              library for all of their websites and apps, reaching 100,000&apos;s of
+              Viasat customers.
+            </Paragraph>
             <Paragraph>
-              I am also a Frontend Developer for ACM working on{' '}
+            Currently, I am actively involved in spearheading two exciting mobile app startups—one centered around the food industry and the other in the dynamic realm of finance.            
+            </Paragraph>
+            <Paragraph>
+              As the Workshop Director and EM Manager for{' '}
+              <Link href="https://www.ucladevx.com/" target="_blank" rel="noreferrer">
+              DevX at UCLA
+              </Link>
+              , I designed curriculums for advanced and beginner workshops of 15 interns each, chosen from a pool of 200 applicants.
+              I lead groups of 3 to apply knowledge from workshop through building full-stack web applications.
+            </Paragraph>
+            <Paragraph>
+              I am also the AWS Deployment Lead and Officer for{' '}
               <a href="https://www.uclaacm.com/">
-                <Link>UCLA at ACM&apos;s website </Link>
-              </a>
-              as well as their{' '}
-              <a href="https://opensource.uclaacm.com/">
-                <Link>OpenSource website</Link>
-              </a>
-              . I am also the Full-Stack Developer and Webmaster for the{' '}
+                <Link>ACM</Link>
+              </a>, where I built Github Actions to automatically deploy all projects to AWS Lambda&apos;s and EC2&apos;s.
+            </Paragraph>
+            <Paragraph>
+              I am a workshop teacher at BAI (Bruin Algorithmic Insights), a branch of{' '}
+              <Link href="https://bruincapital.org/">
+                BCM
+              </Link>.
+            </Paragraph>
+            <Paragraph>
+              Additionally, I am the Full-Stack Developer and Webmaster for the{' '}
               <a href="https://chips.ucla.edu">
                 <Link>CHIPS</Link>
               </a>{' '}
@@ -115,7 +134,7 @@ const Page = () => {
               at UCLA.
               <br />
             </Paragraph>
-          </Paragraph>
+          </Section>
           <Box align="center" my={4}>
             <NextLink href="/#works">
               <Button
