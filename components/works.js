@@ -10,6 +10,8 @@ import thumbDIPD from '../public/images/DIPD-logo.jpg'
 import thumbBAI from '../public/images/bai-logo.png';
 import thumbDevX from '../public/images/devx-logo.jpg';
 import thumbCapitalOne from '../public/images/capital-one.png'
+import thumbFork from "../public/images/fork-logo.jpg"
+import thumbLunarTrading from "../public/images/lunar-trading-logo.png"
 
 const Works = () => {
   return (
@@ -22,6 +24,15 @@ const Works = () => {
           <SimpleGrid column={[1, 1, 2]} gap={6}>
           <Section>
               <WorkGridItem
+                id="fork"
+                title="Fork"
+                thumbnail={thumbFork}
+              >
+                Introducing Fork, your ultimate companion for healthy eating and a seamless dining experience.
+              </WorkGridItem>
+          </Section>
+          <Section>
+              <WorkGridItem
                 id="capitalone"
                 title="Capital One"
                 thumbnail={thumbCapitalOne}
@@ -29,6 +40,15 @@ const Works = () => {
                 Enhance phone authentication system, reduce the 25% of the 300 million customer support calls a year falsely requiring further verification, improving millions of users&apos; experience and saving over $2 million in Operational Expenses.
               </WorkGridItem>
             </Section>
+            <Section>
+              <WorkGridItem
+                id="lunartrading"
+                title="Lunar Trading"
+                thumbnail={thumbLunarTrading}
+              >
+                Democratize investing and empower college students by leveraging AI and ML.
+              </WorkGridItem>
+          </Section>
             <Section>
               <WorkGridItem
                 id="viasat"
@@ -51,12 +71,11 @@ const Works = () => {
                 thumbnail={thumbAcm}
                 height="400"
               >
-                Spearheaded development of informational Open-source website and
-                build out main ACM at UCLA website
+                Enabled effortless AWS deployment for all ACM projects.
               </WorkGridItem>
             </Section>
             {/* Maybe display the title position here! */}
-            <Section>
+            {/* <Section>
               <WorkGridItem
                 id="lunatrading"
                 title="Lunatrading"
@@ -65,7 +84,7 @@ const Works = () => {
               >
                 An all-in-one trading info app
               </WorkGridItem>
-            </Section>
+            </Section> */}
             <Section>
               <WorkGridItem
                 id="devx"

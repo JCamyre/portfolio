@@ -18,7 +18,7 @@ function WorkLayout({id, title, children, image, link, position}) {
                 target="_blank"
                 rel="noreferrer"
             >
-                <div style={{display: 'flex', justifyContent: 'center'}}>
+                <div style={{display: 'flex', justifyContent: 'center', margin: 24}}>
                     <Image src={image} alt={`${title} Logo`} style={{maxWidth: "50%", borderRadius: '24px'}} />
                 </div>
             </a>
