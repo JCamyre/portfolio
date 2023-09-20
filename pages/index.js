@@ -79,7 +79,7 @@ const Page = () => {
               mb={6}
               align="center"
             >
-              Hey, I&apos;m a Full-Stack Developer at UCLA studing Computer
+              Hey, I&apos;m a Backend and Infrastructure Developer at UCLA studing Computer
               Science!
             </Box>
           </Section>
