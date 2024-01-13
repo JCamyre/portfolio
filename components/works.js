@@ -74,17 +74,6 @@ const Works = () => {
                 Enabled effortless AWS deployment for all ACM projects.
               </WorkGridItem>
             </Section>
-            {/* Maybe display the title position here! */}
-            {/* <Section>
-              <WorkGridItem
-                id="lunatrading"
-                title="Lunatrading"
-                thumbnail={thumbLunatrading}
-                width={30}
-              >
-                An all-in-one trading info app
-              </WorkGridItem>
-            </Section> */}
             <Section>
               <WorkGridItem
                 id="devx"
@@ -93,26 +82,6 @@ const Works = () => {
                 width={30}
               >
                 DevX
-              </WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem
-                id="dipd"
-                title="DIPD (Diversity and Inclusion in Product and Data)"
-                thumbnail={thumbDIPD}
-                width={30}
-              >
-                DIPD
-              </WorkGridItem>
-            </Section>
-            <Section>
-              <WorkGridItem
-                id="bai"
-                title="BAI (Bruin AI Quant)"
-                thumbnail={thumbBAI}
-                width={30}
-              >
-                BAI, BCM
               </WorkGridItem>
             </Section>
           </SimpleGrid>
